@@ -1,6 +1,79 @@
 @charset "utf-8";
 /* main portofolio styles */
 @import url('https://fonts.googleapis.com/css?family=Lato');
+
 body {
 	font-family: 'Lato', sans-serif;
+	width:100%;
+	overflow-x:hidden;
 }
+
+html {
+	width:100%;
+	background-image:url(../images/aircraft-engine4.jpg);
+	background-repeat: no-repeat;
+}
+
+.nav {
+	border: 2px solid #FFFFFF;
+	border-width:1px 0;
+	list-style:none;
+	margin:-10px;
+	padding:23px;
+	text-align: center;
+}
+
+.nav li {
+	display:inline;
+	padding:50px;
+}
+
+.nav li:last-of-type {
+	padding-right:50px;
+}
+
+.nav a {
+	display:inline-block;
+	padding:10px;
+	text-decoration: none;
+	color:white;
+	font-size: 17px;
+}
+
+.nav li a:hover {
+	color:#D5D5D5;
+}
+
+h1 {
+    font-size:71px;
+	color:white;
+	float:left;
+	font-weight: 100;
+}
+
+.front_page {
+	width:50%;
+	height:150px;
+	margin:auto;
+	margin-top:-20px;
+}
+
+#blink {
+	font-size:22px;
+	color: #FFFFFF;
+	animation: blink 1s infinite;
+	line-height: 7em;
+}
+
+@keyframes blink {
+	0% { opacity: 1.0; }
+	50% { opacity: 0.0; }
+	100% { opacity: 1.0; }
+}
+
+.white {
+	color: white;
+	padding-top:35px;
+	padding-left:340px;
+}
+

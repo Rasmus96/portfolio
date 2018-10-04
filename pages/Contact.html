@@ -1,0 +1,157 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Contact</title>
+<link href="../styles/styles-contact.css" rel="stylesheet" type="text/css">
+<style>
+	
+	* {
+		margin:0;
+		padding:0;
+	}
+	
+	body {
+	font-family: 'Lato', sans-serif;
+	width:100%;
+	overflow-x:hidden;
+	}
+	
+	
+	html{
+	width:100%;
+	background-image:url(../images/background.jpg);
+	background-repeat: no-repeat;
+	}	
+	
+	/* Form styles */
+	form {
+		width: 30%;
+		border: 1px solid black;
+		padding: 20px;
+		background-color: #A9A9A9;
+		opacity: 0.5;
+	}
+	
+	input, textarea {
+		width:90%;
+		padding:10px;
+	}
+	
+	textarea {
+		height:100px;
+		max-width:90% !important;
+		min-width:90% !important;
+		min-height:75px !important;
+	}
+	
+.nav {
+	border: 2px solid #FFFFFF;
+	border-width:1px 0;
+	list-style:none;
+	margin:-1px;
+	padding:23px;
+	text-align: center;
+	margin-top: -21px;
+}
+
+.nav li {
+	display:inline;
+	padding:50px;
+}
+
+.nav li:last-of-type {
+	padding-right:50px;
+}
+
+.nav a {
+	display:inline-block;
+	padding:10px;
+	text-decoration: none;
+	color:white;
+	font-size: 17px;
+}
+
+.nav li a:hover {
+	color:#D5D5D5;
+}
+
+	
+	#wrapper {
+		width:850px;
+		margin:20px auto;
+	}
+	
+	input.margin {
+		margin-bottom:20px !important;
+	}
+	
+	.love {
+		width:20px !important;
+		margin-top:13px;
+	}
+	
+	p.float {
+		float:left;
+		margin-bottom:20px;
+		margin-top:10px;
+	}
+	
+	.btn {
+		width:100%;
+		border:1px solid transparent;
+	}
+	
+	.btn:hover {
+		background-color:green;
+		border:1px solid black;
+		color:white;
+	}
+	
+</style>
+	
+</head>
+
+<body>
+	
+	<div id="wrapper">
+
+	<ul class="nav">
+		<li><a href="../index.html" class="menu">Home</a></li>
+		<li><a href="Projects.html" class="menu">Projects</a></li>
+		<li><a href="About.html" class="menu">About</a></li>
+		<li><a href="Contact.html" class="menu">Contact</a></li>
+	</ul>
+
+<header>
+	<br>
+	<br>
+	<br>
+  <h1>Contact</h1>
+</header>
+
+<!-- webform -->
+<form action="mailto:contact@rrdesign.dk" method="post" enctype="text/plain">
+
+    <label class="margin">Your Name:</label>
+
+    <input class="margin" type="text" name="name" placeholder="Type your name.." autofocus required>
+
+    <label>Your Email:</label>
+
+    <input class="margin" type="email" name="email" placeholder="Type a valid mail address.." autofocus required>
+
+    <label>Your Message:</label>
+
+  	<textarea class="margin" name="comment" placeholder="Your message..."></textarea>
+	<p class="float">Send copy to my mail</p> <input type="radio" name="love" class="love"> 
+	
+  	<input type="submit" class="btn" value="Send">
+	
+</form>
+		
+	</div><!-- wrapper end -->
+	
+	
+</body>
+</html>
